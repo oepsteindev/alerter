@@ -1,0 +1,81 @@
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+	<title>Add Data</title>
+</head>
+
+<body>
+	<div class="card bg-dark" >
+            <div class="card-body">
+                <div class="card" >
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-5">
+                            <h4> Trade Ideas Database</h4>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="container">
+	<a href="index.php">Home</a>
+	<br/><br/>
+
+	<form action="add.php" method="post" name="form1" class="table">
+		<table width="25%" border="0">
+			<tr> 
+				<td>Ticker</td>
+				<td><input type="text" name="ticker" class="form-control"></td>
+			</tr>
+			<tr> 
+				<td>Bull / Bear</td>
+				<td>
+					<select name="bullbear" class="form-control">
+						<option value="bull">Bull</option>
+						<option value="bear">Bear</option>
+					</select>
+				</td>
+			</tr>
+			<tr> 
+				<td>Target 1</td>
+				<td><input type="text" name="t1" class="form-control"></td>
+			</tr>
+			<tr> 
+				<td>Target 2</td>
+				<td><input type="text" name="t2" class="form-control"></td>
+			</tr>
+			<tr> 
+				<td>Target 3</td>
+				<td><input type="text" name="t3" class="form-control"></td>
+			</tr>
+			<tr> 
+				<td>Target 4</td>
+				<td><input type="text" name="t4" class="form-control"></td>
+			</tr>
+			<tr> 
+				<td>Target 5</td>
+				<td><input type="text" name="t5" class="form-control"></td>
+			</tr>
+			<tr> 
+				<td></td>
+                <td><input type="submit" name="Submit"class="btn btn-primary" value="Add"></td>
+                
+			</tr>
+		</table>
+	</form>
+</div><!---end container-->
+</body>
+</html>
+
